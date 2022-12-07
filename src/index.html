@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS home work 11</title>
+  <link rel="stylesheet" href="./css/mail.css">
+</head>
+
+<body>
+  <header class="header">
+    <form class="search" id="search-form">
+      <input class="search__query" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+      <button class="search__button" type="submit">Search</button>
+    </form>
+  </header>
+  <main class="main">
+    <section class="gallery">
+      <ul class="gallery__list"></ul>
+    </section>
+
+    <div class="loader dot-falling"></div>
+  </main>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
+
